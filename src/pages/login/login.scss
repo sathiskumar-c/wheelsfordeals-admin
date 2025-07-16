@@ -1,0 +1,225 @@
+// Variables
+$primary-color: #1f3bb3;
+$bg-color: #f2f4fc;
+$form-bg: #ffffff;
+$font-main: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+// ===== Main Container =====
+.admin-login-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f3f3f3;
+  font-family: $font-main;
+  flex-wrap: wrap;
+
+  img {
+    width: 75%;
+    max-width: 350px;
+  }
+
+  // ===== Material UI Input Customization =====
+  .MuiOutlinedInput-root {
+    border-radius: 2px !important;
+    max-height: 50px !important;
+  }
+
+  .Mui-error {
+    margin-top: 5px;
+    margin-left: 3px;
+  }
+}
+
+// ===== Left Side: Image Section =====
+.admin-login-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+
+  .admin-login-img {
+    max-width: 90%;
+    height: auto;
+  }
+
+  @media (max-width: 768px) {
+    padding: 20px;
+  }
+}
+
+// ===== Right Side: Form Section =====
+.admin-login-right {
+  flex: 1;
+  background-color: $form-bg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+
+  @media (max-width: 768px) {
+    padding: 20px;
+    width: 100%;
+  }
+}
+
+// ===== Login Form Styling =====
+.admin-login-form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  .form-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: $primary-color;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .forgot-password {
+    font-size: 13px;
+    color: $primary-color;
+    text-align: right;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .admin-login-btn {
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 1px;
+    transition: background 0.3s ease;
+    text-transform: capitalize;
+
+    &:hover {
+      background-color: darken($primary-color, 8%);
+    }
+  }
+
+  .signup-text {
+    font-size: 14px;
+    text-align: center;
+    color: #555;
+
+    .signup-link {
+      color: $primary-color;
+      font-weight: 500;
+      margin-left: 5px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// --- OTP Input Container ---
+.otp-box {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 15px;
+
+  @media (max-width: 400px) {
+    gap: 8px;
+  }
+}
+
+// --- OTP Input Fields ---
+.otp-box input {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+
+  &:focus {
+    border-color: $primary-color;
+    outline: none;
+  }
+
+  @media (max-width: 400px) {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+}
+
+.otp-box input:disabled {
+  background-color: #f5f5f5;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
+
+// --- OTP Error Message ---
+.otp-error {
+  text-align: center;
+  color: red;
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+.try_different_method,
+.resend_otp {
+  width: fit-content !important;
+  text-decoration: underline !important;
+  cursor: pointer !important;
+  color: $primary-color !important;
+  text-transform: capitalize !important;
+  background-color: unset !important;
+  font-weight: 600 !important;
+}
+
+.resend_otp {
+  text-align: right;
+  width: 100% !important;
+}
+
+.back-btn {
+  background-color: transparent !important;
+  color: $primary-color !important;
+  font-weight: 600 !important;
+  text-transform: capitalize !important;
+  margin-top: 10px;
+  padding-left: 0;
+  justify-content: flex-start;
+  text-align: left;
+
+  &:hover {
+    text-decoration: underline !important;
+    background-color: unset !important;
+  }
+}
+
+// ===== Responsive Layout Adjustments =====
+@media (max-width: 768px) {
+  .admin-login-container {
+    flex-direction: column;
+  }
+
+  .admin-login-left,
+  .admin-login-right {
+    flex: none;
+    width: 100%;
+  }
+}
