@@ -10,6 +10,7 @@ import {
 // Pages Imports
 import Login from "./pages/login/login";
 import DashBoard from "./pages/dashboard/dashboard";
+import Account from "./pages/Account/account";
 
 // Components Imports
 import PageNotFound from "./components/page-not-found/page-not-found";
@@ -39,6 +40,9 @@ const App = () => {
 
           <Route path="/page-not-found" element={<PageNotFound />} />
           <Route path="*" element={<Navigate to="/page-not-found" replace />} />
+
+          <Route path="/" element={<Navigate to="/account" replace />} />
+          <Route path="/account" element={<Account />} />
         </Routes>
       </Router>
     </React.Fragment>
