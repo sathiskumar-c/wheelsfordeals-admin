@@ -10,7 +10,7 @@ import {
 // Pages Imports
 import Login from "./pages/login/login";
 import DashBoard from "./pages/dashboard/dashboard";
-import Account from "./pages/Account/account";
+import Account from "./pages/account/account";
 
 // Components Imports
 import PageNotFound from "./components/page-not-found/page-not-found";
