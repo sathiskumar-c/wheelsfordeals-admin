@@ -1,8 +1,20 @@
+// Variables
+$primary-color: #1f3bb3;
+$bg-color: #f2f4fc;
+$form-bg: #ffffff;
+$font-main: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
 .account-container {
   display: flex;
-  gap: 32px;
-  padding: 32px;
+  // gap: 32px;
+  // padding: 32px;
   font-family: "Segoe UI", sans-serif;
+  justify-content: center;
+
+  .forgot-container {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 50%;
+  }
 
   .profile-section {
     background: #f9f9f9;
@@ -113,6 +125,238 @@
       &:hover {
         background: #5600c1;
       }
+    }
+  }
+}
+// ===== Forgot Password Section =====
+.forgot-password-section {
+  background-color: $form-bg;
+  padding: 30px;
+  border-radius: 6px;
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: $primary-color;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+
+    &:focus {
+      border-color: $primary-color;
+      outline: none;
+    }
+  }
+
+  button {
+    background-color: $primary-color;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background-color: darken($primary-color, 8%);
+    }
+  }
+}
+
+// ===== OTP Verification Section =====
+.otp-section {
+  background-color: $form-bg;
+  padding: 30px;
+  border-radius: 6px;
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+
+  p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+
+  .otp-box {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 15px;
+
+    input {
+      width: 50px;
+      height: 50px;
+      font-size: 20px;
+      text-align: center;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: inherit;
+
+      &:focus {
+        border-color: $primary-color;
+        outline: none;
+      }
+    }
+  }
+
+  button {
+    background-color: $primary-color;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background-color: darken($primary-color, 8%);
+    }
+  }
+
+  .error {
+    color: red;
+    font-size: 13px;
+    margin-top: 8px;
+    display: block;
+  }
+}
+
+// ===== Reset Password Section =====
+.reset-password-section {
+  background-color: $form-bg;
+  padding: 30px;
+  border-radius: 6px;
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: $primary-color;
+    text-align: center;
+  }
+
+  input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+    font-family: inherit;
+
+    &:focus {
+      border-color: $primary-color;
+      outline: none;
+    }
+  }
+
+  button {
+    background-color: $primary-color;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background-color: darken($primary-color, 8%);
+    }
+  }
+}
+
+// ===== Forgot Password Link in Profile Form =====
+.forgot-password-link {
+  font-size: 13px;
+  color: $primary-color;
+  text-align: right;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-top: 10px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.forgot-layout {
+  display: flex;
+  min-height: 100vh;
+
+  .forgot-left {
+    flex: 1;
+    background: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .forgot-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 4rem;
+
+    .forgot-title {
+      color: #1e40af;
+      margin-bottom: 1rem;
+    }
+
+    input {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      background: #1e40af;
+      color: #fff;
+      padding: 0.8rem;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+
+    .back-btn {
+      background: none;
+      border: none;
+      color: #1e40af;
+      cursor: pointer;
+      text-align: left;
     }
   }
 }
