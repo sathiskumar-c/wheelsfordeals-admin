@@ -18,6 +18,7 @@ import UploadNewBike from "./components/upload-new-bike/upload-new-bike";
 
 // Local Imports
 import "./App.scss";
+import ForgotPassword from "./pages/forgot-password/forgot-password";
 
 const App = () => {
   const handleFormSubmit = (data) => {
@@ -35,6 +36,7 @@ const App = () => {
             path="/newbike"
             element={<UploadNewBike onSubmit={handleFormSubmit} />}
           />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
 
           <Route path="/login" element={<Login />} />
 
