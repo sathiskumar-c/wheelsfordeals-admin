@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Home Page",
+    "message": "Manage main landing page content, including header, footer, and featured sections. Control what users see first to ensure a compelling and engaging initial experience for all visitors.",
+    "icon": "/images/illustrations/welcome.svg",
+    "actions": [
+      {
+        "label": "Edit Home",
+        "link": "home/edit",
+        "type": "primary"
+      },
+      {
+        "label": "Learn More",
+        "link": "learn-more/home-page",
+        "type": "secondary"
+      }
+    ]
+  },
+  {
+    "title": "About Us",
+    "message": "Update your company's story, mission, and team information to build a strong connection with your audience. Share your unique journey and what makes your brand special.",
+    "icon": "/images/illustrations/about.svg",
+    "actions": [
+      { "label": "Edit About Us", "link": "about-us/edit", "type": "primary" },
+      {
+        "label": "Learn More",
+        "link": "learn-more/about-us",
+        "type": "secondary"
+      }
+    ]
+  },
+  {
+    "title": "Contact Us",
+    "message": "Configure contact details and support options for your customers. Ensure users can easily reach out for assistance with vehicles, services, or any other questions they might have.",
+    "icon": "/images/illustrations/contact.svg",
+    "actions": [
+      {
+        "label": "Edit Contact Us",
+        "link": "contact-us/edit",
+        "type": "primary"
+      },
+      {
+        "label": "Learn More",
+        "link": "learn-more/contact-us",
+        "type": "secondary"
+      }
+    ]
+  },
+  {
+    "title": "FAQs",
+    "message": "Add, edit, or remove questions and answers to provide quick solutions for your customers. A well-maintained FAQ page can significantly reduce support requests.",
+    "icon": "/images/illustrations/faq.svg",
+    "actions": [
+      { "label": "Edit FAQs", "link": "edit/faq", "type": "primary" },
+      {
+        "label": "Learn More",
+        "link": "learn-more/faq",
+        "type": "secondary"
+      }
+    ]
+  }
+]
