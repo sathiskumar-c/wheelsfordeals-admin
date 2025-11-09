@@ -1,0 +1,30 @@
+{
+  "statsData": [
+    {
+      "title": "Budget",
+      "value": "$24k",
+      "icon": "dollar",
+      "change": "12%",
+      "changeType": "up",
+      "description": "Since last month"
+    },
+    {
+      "title": "Total Customers",
+      "value": "1.6k",
+      "icon": "users",
+      "change": "16%",
+      "changeType": "down",
+      "description": "Since last month"
+    },
+    {
+      "title": "Task Progress",
+      "value": "75.5%",
+      "icon": "tasks"
+    },
+    {
+      "title": "Total Profit",
+      "value": "$15k",
+      "icon": "chart"
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+[
+  {
+    "title": "Popular Used Bikes",
+    "message": "Manage the popular search queries for used bikes displayed on the home page.",
+    "icon": "/images/illustrations/popular-searches.svg",
+    "actions": [
+      {
+        "label": "Edit Searches",
+        "link": "home/popular-searches/edit",
+        "type": "primary"
+      },
+      {
+        "label": "Learn More",
+        "link": "learn-more/home-popular-searches",
+        "type": "secondary"
+      }
+    ]
+  },
+  {
+    "title": "Browse Bikes By",
+    "message": "Configure categories for browsing bikes, such as by brand, price, or body type.",
+    "icon": "/images/illustrations/browse-by.svg",
+    "actions": [
+      {
+        "label": "Edit Categories",
+        "link": "home/browse-by/edit",
+        "type": "primary"
+      },
+      {
+        "label": "Learn More",
+        "link": "learn-more/home-browse-by",
+        "type": "secondary"
+      }
+    ]
+  },
+  {
+    "title": "Wheelsfordeals Benefits",
+    "message": "Highlight the key benefits and advantages of choosing Wheelsfordeals for customers.",
+    "icon": "/images/illustrations/benefits.svg",
+    "actions": [
+      {
+        "label": "Edit Benefits",
+        "link": "home/benefits/edit",
+        "type": "primary"
+      },
+      {
+        "label": "Learn More",
+        "link": "learn-more/home-benefits",
+        "type": "secondary"
+      }
+    ]
+  },
+  {
+    "title": "Our Services",
+    "message": "Detail the various services offered, such as financing, insurance, and maintenance.",
+    "icon": "/images/illustrations/services.svg",
+    "actions": [
+      {
+        "label": "Edit Services",
+        "link": "home/services/edit",
+        "type": "primary"
+      },
+      {
+        "label": "Learn More",
+        "link": "learn-more/home-services",
+        "type": "secondary"
+      }
+    ]
+  },
+  {
+    "title": "Top Recommended Brand",
+    "message": "Feature and manage the top recommended bike brand on the home page.",
+    "icon": "/images/illustrations/recommended-brand.svg",
+    "actions": [
+      {
+        "label": "Edit Brand",
+        "link": "home/recommended-brand/edit",
+        "type": "primary"
+      },
+      {
+        "label": "Learn More",
+        "link": "learn-more/home-recommended-brand",
+        "type": "secondary"
+      }
+    ]
+  },
+  {
+    "title": "Need help?",
+    "message": "Configure the 'Need help?' section to guide users to support and contact options.",
+    "icon": "/images/illustrations/need-help.svg",
+    "actions": [
+      {
+        "label": "Edit Section",
+        "link": "home/need-help/edit",
+        "type": "primary"
+      },
+      {
+        "label": "Learn More",
+        "link": "learn-more/home-need-help",
+        "type": "secondary"
+      }
+    ]
+  },
+  {
+    "title": "Why Choose Us?",
+    "message": "Articulate the unique selling propositions and reasons why customers should choose your dealership.",
+    "icon": "/images/illustrations/why-choose-us.svg",
+    "actions": [
+      {
+        "label": "Edit Reasons",
+        "link": "home/why-choose-us/edit",
+        "type": "primary"
+      },
+      {
+        "label": "Learn More",
+        "link": "learn-more/home-why-choose-us",
+        "type": "secondary"
+      }
+    ]
+  },
+  {
+    "title": "FAQs",
+    "message": "Manage the FAQ section displayed on the home page to answer common customer questions.",
+    "icon": "/images/illustrations/faq.svg",
+    "actions": [
+      {
+        "label": "Edit FAQs",
+        "link": "home/faq/edit",
+        "type": "primary"
+      },
+      {
+        "label": "Learn More",
+        "link": "learn-more/home-faq",
+        "type": "secondary"
+      }
+    ]
+  },
+  {
+    "title": "Subscribe for Updates",
+    "message": "Configure the newsletter subscription form to capture user emails for marketing updates.",
+    "icon": "/images/illustrations/subscribe.svg",
+    "actions": [
+      {
+        "label": "Edit Form",
+        "link": "home/subscribe/edit",
+        "type": "primary"
+      },
+      {
+        "label": "Learn More",
+        "link": "learn-more/home-subscribe",
+        "type": "secondary"
+      }
+    ]
+  },
+  {
+    "title": "What motivates us",
+    "message": "Share the mission and driving force behind your brand to connect with your audience.",
+    "icon": "/images/illustrations/motivation.svg",
+    "actions": [
+      {
+        "label": "Edit Content",
+        "link": "home/motivation/edit",
+        "type": "primary"
+      },
+      {
+        "label": "Learn More",
+        "link": "learn-more/home-motivation",
+        "type": "secondary"
+      }
+    ]
+  },
+  {
+    "title": "Explore Body Type",
+    "message": "Manage the bike body type exploration section to help users find their perfect bike style.",
+    "icon": "/images/illustrations/body-type.svg",
+    "actions": [
+      {
+        "label": "Edit Body Types",
+        "link": "home/body-type/edit",
+        "type": "primary"
+      },
+      {
+        "label": "Learn More",
+        "link": "learn-more/home-body-type",
+        "type": "secondary"
+      }
+    ]
+  }
+]

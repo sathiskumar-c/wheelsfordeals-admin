@@ -15,8 +15,9 @@ import ForgotPassword from "./pages/forgot-password/forgot-password";
 import Sales from "./pages/sales/sales";
 import MyProfile from "./pages/my-profile/my-profile";
 import Branches from "./pages/branches/branches";
-import UserPages from "./pages/user-pages/user-pages";
 import Bikes from "./pages/bikes/bikes";
+import UserPages from "./pages/user-pages/user-pages";
+import PageComponent from "./pages/page-components/page-components";
 
 // Components Imports
 import NavbarDeskTop from "./components/common/navbar/navbar";
@@ -48,10 +49,14 @@ const App = () => {
             element={<UploadNewBike onSubmit={handleFormSubmit} />}
           />
           <Route path="/bikes" element={<Bikes />} />
-          <Route path="/user-pages" element={<UserPages />} />
+          <Route path="admin/pages" element={<UserPages />} />
+          <Route
+            path="/admin/pages/:page-name/edit"
+            element={<PageComponent />}
+          />
           <Route path="/forgot-password" element={<ForgotPassword />} />
-          <Route path="/page-not-found" element={<PageNotFound />} />
-          <Route path="*" element={<Navigate to="/page-not-found" replace />} />
+          {/* <Route path="/page-not-found" element={<PageNotFound />} /> */}
+          {/* <Route path="*" element={<Navigate to="/page-not-found" replace />} /> */}
         </Routes>
       </Router>
     </React.Fragment>
