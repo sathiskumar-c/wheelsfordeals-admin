@@ -1,0 +1,20 @@
+.user-pages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 2rem;
+  justify-content: center;
+  align-items: stretch;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-card {
+    flex: 1 1 300px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+}

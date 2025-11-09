@@ -1,8 +1,16 @@
+// React Imports
+import React from "react";
+
+// Local Imports
+import "./sales.scss";
+import MetricsBoard from "../../components/metrics-board/metrics-board";
+
 const Sales = () => {
   return (
-    <>
-      <h1>Sales</h1>
-    </>
+    <div className="sales-page">
+      <br />
+      <MetricsBoard />
+    </div>
   );
 };
 
