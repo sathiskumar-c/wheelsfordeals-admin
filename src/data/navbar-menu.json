@@ -1,0 +1,141 @@
+{
+  "title": "WheelsForDeals Admin",
+  "navLinks": [
+    {
+      "label": "Dashboard",
+      "path": "/dashboard",
+      "submenu": false
+    },
+    {
+      "label": "Sales",
+      "path": "sales",
+      "submenu": false
+    },
+    {
+      "label": "Branches",
+      "path": "/branches",
+      "submenu": false
+    },
+    {
+      "label": "Bikes",
+      "path": "/bikes",
+      "submenu": false
+    },
+    {
+      "label": "Pages",
+      "path": "/user-pages",
+      "submenu": true,
+      "categories": [
+        {
+          "name": "Home Page",
+          "section_type": "append_as_link",
+          "subcategories": [
+            {
+              "id": "home-header",
+              "name": "Header",
+              "path": "/pages/home/header"
+            },
+            {
+              "id": "home-footer",
+              "name": "Footer",
+              "path": "/pages/home/footer"
+            },
+            {
+              "id": "home-popular-bikes",
+              "name": "Popular Used Bikes Searches",
+              "path": "/pages/home/popular-bikes"
+            },
+            {
+              "id": "home-browse-bikes",
+              "name": "Browse Bikes By",
+              "path": "/pages/home/browse-bikes"
+            },
+            {
+              "id": "home-benefits",
+              "name": "Wheelsfordeals Benefits",
+              "path": "/pages/home/benefits"
+            }
+          ]
+        },
+        {
+          "name": "About Us Page",
+          "section_type": "append_as_link",
+          "subcategories": [
+            {
+              "id": "about-header",
+              "name": "Header",
+              "path": "/pages/about/header"
+            },
+            {
+              "id": "about-footer",
+              "name": "Footer",
+              "path": "/pages/about/footer"
+            },
+            {
+              "id": "about-content",
+              "name": "Content Sections",
+              "path": "/pages/about/content"
+            }
+          ]
+        },
+        {
+          "name": "Contact Us Page",
+          "section_type": "append_as_link",
+          "subcategories": [
+            {
+              "id": "contact-header",
+              "name": "Header",
+              "path": "/pages/contact/header"
+            },
+            {
+              "id": "contact-footer",
+              "name": "Footer",
+              "path": "/pages/contact/footer"
+            },
+            {
+              "id": "contact-form",
+              "name": "Contact Form",
+              "path": "/pages/contact/form"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "logo": {
+    "url": "https://static.vecteezy.com/system/resources/previews/024/207/679/non_2x/vintage-motorcycle-cartoon-logo-with-ai-generative-free-png.png",
+    "alt": "WheelsForDeals Admin Logo"
+  },
+  "profile": {
+    "tooltip": "Admin Profile",
+    "defaultAvatar": "/static/images/avatar/2.jpg",
+    "fallbackAvatar": "/images/illustrations/fallback_profile.svg",
+    "menuItems": [
+      {
+        "label": "Profile",
+        "path": "/admin/profile",
+        "action": "navigate"
+      },
+      {
+        "label": "Settings",
+        "path": "/admin/settings",
+        "action": "navigate"
+      },
+      {
+        "label": "Logout",
+        "action": "logout"
+      }
+    ]
+  },
+  "ui": {
+    "offcanvasTitle": "WheelsForDeals Admin",
+    "defaultImage": "/default-image.jpg",
+    "animations": {
+      "arrowRotation": {
+        "collapsed": "rotate(0deg)",
+        "expanded": "rotate(180deg)",
+        "transition": "transform 0.3s ease"
+      }
+    }
+  }
+}
