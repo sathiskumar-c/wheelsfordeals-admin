@@ -1,0 +1,332 @@
+// @use "../../styles/colors";
+
+@use "../../../styles/colors.scss";
+
+.navbar-menu {
+  padding-bottom: 0px !important;
+  padding-top: 0px !important;
+
+  .navbar-brand {
+    font-size: 1.5rem;
+    color: colors.$text-dark !important;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .offcanvasNavbar {
+    .offcanvas-header {
+      border-bottom: 1px solid colors.$ultra-light-gray;
+
+      .offcanvas-title {
+        color: colors.$text-dark;
+      }
+    }
+
+    .navbar-nav {
+      .menu-container {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid colors.$ultra-light-gray;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        .nav-link {
+          padding: 12px 16px;
+          color: colors.$dark-gray !important;
+          font-weight: 500;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+      }
+
+      column-gap: 25px;
+      justify-content: center;
+    }
+  }
+
+  .btn-login {
+    padding: 8px 20px;
+    font-size: 14px;
+    border-radius: 6px;
+
+    &:hover {
+      background-color: #0d6efd;
+      border: 1px solid white !important;
+      color: white;
+    }
+  }
+
+  .btn-signup {
+    padding: 8px 20px;
+    font-size: 14px;
+    border-radius: 6px;
+
+    &:hover {
+      background-color: white;
+      border: 1px solid #0d6efd white !important;
+      color: #0d6efd;
+    }
+  }
+
+  // Profile Menu Styles
+  .MuiMenu-paper {
+    margin-top: 8px !important;
+
+    .MuiMenuItem-root {
+      padding: 8px 16px;
+      min-height: 40px;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.04);
+      }
+
+      .MuiTypography-root {
+        font-size: 14px;
+      }
+
+      .MuiSvgIcon-root {
+        color: #666;
+      }
+    }
+  }
+
+  .profile-button {
+    display: flex;
+    align-items: center;
+    padding: 4px 8px;
+    border-radius: 20px;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.04);
+    }
+  }
+
+  .profile-btn {
+    color: #333 !important;
+    font-weight: 600;
+    font-size: 14px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: unset !important;
+    }
+  }
+}
+
+.sub-menu-desktop {
+  padding: 10px 0;
+  width: 100vw;
+  background: colors.$white;
+  border: 1px solid colors.$pale-sky;
+  box-shadow: 0 24px 48px hsla(221, 9%, 54%, 0.08);
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 55px;
+  left: 0;
+  transition: all 0.1s ease-in-out 0s;
+  z-index: 99;
+  height: 450px;
+
+  .sub-menu-desktop-left {
+    width: 25%;
+
+    .sub-menu-ul-left {
+      list-style-type: none;
+      padding: 15px 0px 15px 0px;
+      border-right: 1px solid colors.$ultra-light-gray;
+
+      li:hover {
+        cursor: pointer;
+        background-image: linear-gradient(
+          to right,
+          colors.$text-dark,
+          colors.$dark-gray 49%,
+          colors.$dim-gray
+        );
+        color: colors.$white;
+      }
+    }
+
+    li {
+      padding: 10px;
+    }
+  }
+
+  .sub-menu-desktop-right {
+    width: 75%;
+    padding-left: 10px;
+    padding-top: 10px;
+
+    .sub-menu-ul-right {
+      padding-left: 10px !important;
+      padding-top: 0px !important;
+
+      li {
+        list-style-type: none;
+        padding-top: 5px;
+        cursor: pointer;
+      }
+
+      .append_as_image_li {
+        cursor: pointer;
+        height: 75px;
+        width: 75px;
+
+        .append_as_image_img {
+          width: 100%;
+          height: 65px;
+          object-fit: contain;
+        }
+      }
+    }
+
+    .append_as_image {
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 15px;
+      column-gap: 20px;
+      flex-wrap: wrap;
+    }
+  }
+
+  .arrow_right_icon {
+    float: right !important;
+  }
+}
+
+.sub-menu-mobile {
+  background-color: colors.$ultra-light-gray;
+  margin: 0 -16px;
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 8px;
+
+  .sub-menu-category {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .category-title {
+      font-weight: 600;
+      color: colors.$text-dark;
+      margin-bottom: 12px;
+      font-size: 1rem;
+    }
+
+    .subcategory-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        padding: 8px 0;
+        cursor: pointer;
+        color: colors.$dark-gray;
+        font-size: 0.9rem;
+        border-bottom: 1px solid colors.$pale-sky;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        &:hover {
+          color: colors.$text-dark;
+          background-color: colors.$white;
+          padding-left: 8px;
+          transition: all 0.2s ease;
+        }
+      }
+    }
+
+    .subcategory-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+      gap: 12px;
+      margin-top: 12px;
+
+      .subcategory-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
+        padding: 8px;
+        border-radius: 8px;
+        transition: all 0.2s ease;
+
+        &:hover {
+          background-color: colors.$white;
+          transform: translateY(-2px);
+        }
+
+        img {
+          width: 50px;
+          height: 40px;
+          object-fit: contain;
+          margin-bottom: 6px;
+        }
+
+        .subcategory-name {
+          font-size: 0.75rem;
+          color: colors.$dark-gray;
+          line-height: 1.2;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .navbar-menu {
+    padding-bottom: 10px !important;
+    padding-top: 10px !important;
+    .offcanvasNavbar {
+      width: 100% !important;
+      max-width: 400px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-menu {
+    .menu-container {
+      .nav-link {
+        border-bottom: none !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199.98px) and (min-width: 768px) {
+  .sub-menu-mobile {
+    .sub-menu-category {
+      .subcategory-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 16px;
+
+        .subcategory-item {
+          img {
+            width: 60px;
+            height: 50px;
+          }
+
+          .subcategory-name {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}

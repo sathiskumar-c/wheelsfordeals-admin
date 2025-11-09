@@ -282,6 +282,7 @@ const Login = () => {
                   onClick={() => {
                     setStep("forgot");
                     sessionStorage.setItem("admin-login-step", "forgot");
+                    navigate("/forgot-password");
                   }}
                 >
                   Forgot password?
@@ -426,7 +427,7 @@ const Login = () => {
             </>
           )}
 
-          {step === "forgot_otp" && (
+          {/* {step === "forgot_otp" && (
             <>
               <div style={{ textAlign: "center", marginBottom: "10px" }}>
                 Enter the OTP sent to <b>{maskEmail(formData.email)}</b>
@@ -468,7 +469,62 @@ const Login = () => {
                 Verify OTP
               </Button>
             </>
-          )}
+          )} */}
+          {step === "forgot_otp" && (
+  <>
+    <div style={{ textAlign: "center", marginBottom: "10px" }}>
+      Enter the OTP sent to <b>{maskEmail(formData.email)}</b>
+    </div>
+    <Box className="otp-box">
+      {otp.map((digit, index) => (
+        <input
+          key={index}
+          type="text"
+          maxLength={1}
+          ref={otpRefs.current[index]}
+          value={digit}
+          onChange={handleOtpChange(index)}
+          onKeyDown={(e) => {
+            if (e.key === "Backspace" && !otp[index] && index > 0) {
+              otpRefs.current[index - 1]?.current?.focus();
+            }
+          }}
+          onPaste={handleOtpPaste}
+          autoComplete="one-time-code"
+          aria-label={`OTP digit ${index + 1}`}
+          disabled={otpDisabled}
+        />
+      ))}
+    </Box>
+
+    <Button
+      className="admin-login-btn"
+      onClick={() => {
+        if (otp.join("") === "1234") {
+          setStep("reset");
+          sessionStorage.setItem("admin-login-step", "reset");
+        } else {
+          setOtpError("Invalid OTP");
+        }
+      }}
+      disabled={otp.some((d) => d === "")}
+    >
+      Verify OTP
+    </Button>
+
+    {/* ADD THIS */}
+    <Button
+      className="try_different_method"
+      onClick={() => {
+        setStep("method");
+        sessionStorage.setItem("admin-login-step", "method");
+      }}
+    >
+      Try different method
+    </Button>
+  </>
+)}
+
 
           {step === "reset" && (
             <>
