@@ -23,8 +23,8 @@
     },
     {
       "label": "Pages",
-      "path": "/user-pages",
-      "submenu": true,
+      "path": "admin/pages",
+      "submenu": false,
       "categories": [
         {
           "name": "Home Page",

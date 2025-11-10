@@ -1,1 +1,53 @@
-[]
+[
+  {
+    "title": "Our Story",
+    "message": "Share the history and journey of the company, from its beginnings to the present day.",
+    "icon": "/images/illustrations/our-story.svg",
+    "actions": [
+      {
+        "label": "Edit Story",
+        "link": "about-us/story/edit",
+        "type": "primary"
+      },
+      {
+        "label": "Learn More",
+        "link": "learn-more/about-story",
+        "type": "secondary"
+      }
+    ]
+  },
+  {
+    "title": "Meet the Team",
+    "message": "Introduce the key members of your team and highlight their roles and expertise.",
+    "icon": "/images/illustrations/team.svg",
+    "actions": [
+      {
+        "label": "Edit Team Members",
+        "link": "about-us/team/edit",
+        "type": "primary"
+      },
+      {
+        "label": "Learn More",
+        "link": "learn-more/about-team",
+        "type": "secondary"
+      }
+    ]
+  },
+  {
+    "title": "Mission & Vision",
+    "message": "Articulate the company's mission, vision, and the core values that drive your business.",
+    "icon": "/images/illustrations/mission-vision.svg",
+    "actions": [
+      {
+        "label": "Edit Content",
+        "link": "about-us/mission/edit",
+        "type": "primary"
+      },
+      {
+        "label": "Learn More",
+        "link": "learn-more/about-mission",
+        "type": "secondary"
+      }
+    ]
+  }
+]
