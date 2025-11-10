@@ -51,7 +51,7 @@
     "message": "Add, edit, or remove questions and answers to provide quick solutions for your customers. A well-maintained FAQ page can significantly reduce support requests.",
     "icon": "/images/illustrations/faq.svg",
     "actions": [
-      { "label": "Edit FAQs", "link": "edit/faq", "type": "primary" },
+      { "label": "Edit FAQs", "link": "faq/edit", "type": "primary" },
       {
         "label": "Learn More",
         "link": "learn-more/faq",
