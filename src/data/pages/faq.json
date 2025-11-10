@@ -1,1 +1,36 @@
-[]
+[
+  {
+    "title": "General Questions",
+    "message": "Manage frequently asked questions about general topics, purchasing, and policies.",
+    "icon": "/images/illustrations/faq.svg",
+    "actions": [
+      {
+        "label": "Edit FAQs",
+        "link": "faq/general/edit",
+        "type": "primary"
+      },
+      {
+        "label": "Learn More",
+        "link": "learn-more/faq-general",
+        "type": "secondary"
+      }
+    ]
+  },
+  {
+    "title": "Bike & Technical",
+    "message": "Address common questions regarding bike specifications, features, and technical details.",
+    "icon": "/images/illustrations/body-type.svg",
+    "actions": [
+      {
+        "label": "Edit FAQs",
+        "link": "faq/technical/edit",
+        "type": "primary"
+      },
+      {
+        "label": "Learn More",
+        "link": "learn-more/faq-technical",
+        "type": "secondary"
+      }
+    ]
+  }
+]

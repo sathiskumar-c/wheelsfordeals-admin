@@ -1,1 +1,36 @@
-[]
+[
+  {
+    "title": "Contact Details",
+    "message": "Manage the primary contact information, including phone, email, and address.",
+    "icon": "/images/illustrations/contact-details.svg",
+    "actions": [
+      {
+        "label": "Edit Details",
+        "link": "contact-us/details/edit",
+        "type": "primary"
+      },
+      {
+        "label": "Learn More",
+        "link": "learn-more/contact-details",
+        "type": "secondary"
+      }
+    ]
+  },
+  {
+    "title": "Contact Form",
+    "message": "Configure and manage the fields and settings for the contact submission form.",
+    "icon": "/images/illustrations/contact-form.svg",
+    "actions": [
+      {
+        "label": "Edit Form",
+        "link": "contact-us/form/edit",
+        "type": "primary"
+      },
+      {
+        "label": "Learn More",
+        "link": "learn-more/contact-form",
+        "type": "secondary"
+      }
+    ]
+  }
+]
