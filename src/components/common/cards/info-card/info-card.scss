@@ -1,0 +1,95 @@
+// Variables
+$primary-color: rgba(59, 130, 246, 1);
+$secondary-bg: rgba(249, 250, 251, 1);
+$secondary-hover: rgb(230, 231, 233);
+$text-color: rgba(107, 114, 128, 1);
+$title-color: rgba(55, 65, 81, 1);
+$border-color: rgba(219, 234, 254, 1);
+$white: #fff;
+
+.info-card {
+  max-width: 320px;
+  border: 1px solid $border-color;
+  border-radius: 1rem;
+  background-color: $white;
+  padding: 1rem;
+  font-family: system-ui, sans-serif;
+  display: flex;
+  flex-direction: column;
+
+  &-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &-icon {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: $primary-color;
+    padding: 0.5rem;
+    color: $white;
+
+    svg,
+    &-img {
+      height: 1rem;
+      width: 1rem;
+      object-fit: contain;
+    }
+  }
+
+  &-title {
+    font-weight: 600;
+    color: $title-color;
+    margin: 0 !important;
+  }
+
+  &-body {
+    margin-top: 1rem;
+    color: $text-color;
+  }
+
+  &-actions {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    .info-card-btn {
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 0.5rem;
+      width: 100%;
+      padding: 0.75rem 1.25rem;
+      text-align: center;
+      font-size: 0.875rem;
+      font-weight: 600;
+      line-height: 1.25rem;
+      transition: background-color 0.15s ease;
+      border: unset !important;
+
+      &-primary {
+        background-color: $primary-color;
+        color: $white;
+      }
+
+      &-secondary {
+        background-color: $secondary-bg;
+        color: $text-color;
+
+        &:hover {
+          background-color: $secondary-hover;
+        }
+      }
+    }
+  }
+
+  .popover-parent {
+    position: absolute;
+    right: 0px;
+  }
+}

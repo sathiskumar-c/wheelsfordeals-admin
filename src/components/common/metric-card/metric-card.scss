@@ -1,0 +1,81 @@
+.metrics-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+  width: fit-content;
+  min-width: 200px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  &__title {
+    font-size: 0.9rem;
+    color: #777;
+  }
+
+  &__value {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #222;
+  }
+
+  &__change {
+    font-size: 0.85rem;
+    margin-top: 0.2rem;
+
+    &--up {
+      color: #2ecc71;
+    }
+
+    &--down {
+      color: #e74c3c;
+    }
+  }
+
+  &__description {
+    margin-left: 6px;
+    color: #888;
+  }
+
+  &__icon {
+    background: #f5f6fa;
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    font-size: 1.3rem;
+  }
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+    &__value {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    gap: 1rem;
+
+    &__top {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__icon {
+      align-self: flex-end;
+    }
+  }
+}
